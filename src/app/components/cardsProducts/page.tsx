@@ -8,7 +8,10 @@ const CardsProducts = () => {
         <section className={styles.imgInfos}>
 
         </section>
-        section.{styles.descriptions}
+        <section className={styles.description}>
+          
+        </section>
+
         
       </main>
     </div>
