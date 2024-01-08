@@ -12,14 +12,18 @@ async function dataproducts() {
 console.log(dataproducts());
 const CardsProducts = async () => {
   const products: any = await dataproducts();
-  console.log(products.productImage);
+  const textImageUrl: string = "data:image/png;base64,";
+
   return (
     <>
       {products.map((product: any, index: number) => (
         <div className={styles.container} key={products.id}>
           <main className={styles.container_itens}>
-            <section className={styles.imgInfos}>              
-               
+            <section className={styles.imgInfos}>
+              <Image
+                src={textImageUrl +product.productImages[0].image}
+                alt="card image"
+              />
               
             </section>
             <section className={styles.description}>
