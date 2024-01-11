@@ -3,7 +3,6 @@ import styles from "@/assets/styles/components/header.module.sass";
 import Link from "next/link";
 import * as Icons from "react-icons/fa";
 
-
 export default function Header() {
   return (
     <header className={styles.container}>
@@ -16,7 +15,7 @@ export default function Header() {
           <Icons.FaAddressBook />
           <li>Contatos</li>
         </Link>
-        <Link href='/sobre'>
+        <Link href="/sobre">
           <Icons.FaFileSignature />
           <li>Sobre</li>
         </Link>

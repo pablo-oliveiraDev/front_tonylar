@@ -1,9 +1,10 @@
 @import '../variables'
 @import '../mixins'
+
 .container
-    @include verticalAlignFlex    
+    @include verticalAlignFlex
     justify-content: center
-    margin:5px
+    margin: 5px
     padding: 10px
     background: $Yelow
     font-family: $Font-default
@@ -12,7 +13,26 @@
     margin-left: 0
     .container_itens
         background: #4c230b
+        //background-image: url("../../images/buyCar.png")
+        background-size: 40px
         width: 270px
         height: 270px
-        border-radius:4px
+        border-radius: 4px
         //border: 2px solid red
+
+        .imgInfos
+            @include horizontalAlignFleX
+            justify-content: center
+            margin-top: 10px
+
+        .description
+            display: flex
+            flex-direction: column           
+            margin-top: 10px
+            span
+                padding-left:10px
+                padding-right:10px
+                font-weight: 700
+                font-size: 1.7vw
+                //background: #000
+                color: $Yelow
