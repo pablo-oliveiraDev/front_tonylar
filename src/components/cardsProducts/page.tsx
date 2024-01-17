@@ -45,4 +45,4 @@ const CardsProducts = async () => {
     </>
   );
 };
-export default CardsProducts;
+export default CardsProducts;//verify my code?
